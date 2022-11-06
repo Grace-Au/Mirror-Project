@@ -136,40 +136,102 @@ html {
 body {
   background-image: url(Picture/redOrangeBg.jpg);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.title {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 60px;
 }
 
 .voteTable {
   background-color: black;
   border-radius: 10px;
-  margin: 50px 35px;
-  padding: 15px;
-  width: 100%;
+  margin: 35px;
+  padding: 25px 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
   text-align: center;
   color: white;
 }
 
-.voteTable h2 {
+.name {
   text-transform: uppercase;
   font-size: 35px;
   font-family: "Playfair Display", serif;
   color: brown;
-}
-
-.voteTable a {
-  color: white;
-}
-
-img {
-  width: 300px;
-  border: 6px solid burlywood;
-  border-radius: 5px;
+  margin: 10px 0;
 }
 
 .person {
-  padding-bottom: 20px;
+  /* margin: 20px 0 10px 0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.voteTable a:link {
+  color: darkkhaki;
+}
+
+.voteTable a:visited {
+  color: darkgoldenrod;
+}
+
+.voteTable a:hover {
+  color: gold;
+}
+
+img {
+  max-width: 300px;
+  border: 6px solid burlywood;
+  border-radius: 5px;
+  transition: transform 1s;
+}
+
+.person img:hover {
+  transform: scale(1.5);
+}
+
+.like {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  color: #000000;
+  border: 5px solid #f2f2f2;
+  border-radius: 5px;
+  width: 20%;
+  align-self: center;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  /* visibility: hidden; */
+}
+
+.like:hover {
+  background-color: LightGrey;
+  border: 5px solid LightGrey;
+  border-radius: 5px;
+  color: #e60000;
+}
+
+.like:active {
+  background-color: white;
+  border: 5px solid blue;
+  border-radius: 5px;
+  color: blue;
+}
+
+.like:focus {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+  color: #e60000;
 }
