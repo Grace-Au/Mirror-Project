@@ -1,3 +1,4 @@
 #Mirror Project
 
-A website thats introducing the a boy band Hong Kong and allowing people to vote for their favourite member in Mirror.
+A website that's introducing a boy band in Hong Kong and allowing people to vote
+for their favourite member in Mirror.
